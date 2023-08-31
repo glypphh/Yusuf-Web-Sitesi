@@ -1,0 +1,210 @@
+extends layout
+
+block content
+
+    #video
+      .preloader
+        .preloader-bounce
+          span
+          span
+          span
+      header#header
+        .container-fluid
+          .navbar
+            a#logo(href='#slide01' title='Elegance by TemplateMo')
+              | Yusuf'un Sitesi
+            .navigation-row
+              nav#navigation
+                button.navbar-toggle(type='button')
+                  i.fa.fa-bars
+                .nav-box.navbar-collapse
+                  ul#nav.navigation-menu.nav.navbar-nav.navbars
+                    li.active(data-menuanchor='slide01')
+                      a(href='#slide01') Ana Sayfa
+                    li(data-menuanchor='slide02')
+                      a(href='#slide02') Hakkımda
+                    li(data-menuanchor='slide03')
+                      a(href='#slide03') Yeteneklerim
+                    li(data-menuanchor='slide04')
+                      a(href='#slide04') Neler Yapabilirim
+                    li(data-menuanchor='slide05')
+                      a(href='#slide05') Çalışmalarım
+                    li(data-menuanchor='slide06')
+                      a(href='#slide06') İletişime geçin
+      video#myVideo(autoplay='' muted='' loop='')
+        source(src='images/video-bg.mp4' type='video/mp4')
+      #fullpage.fullpage-default
+        .section.animated-row(data-section='slide01')
+          .section-inner
+            .welcome-box
+              span.welcome-first.animate(data-animate='fadeInUp') Merhaba, Yusuf'un sitesine
+              h1.welcome-title.animate(data-animate='fadeInUp') HOŞGELDİNİZ
+              p.animate(data-animate='fadeInUp')
+                | Bu sayfada benim hakkımdaki bütün bilgileri
+                | öğrenebilirsiniz.
+              .scroll-down.next-section.animate(class='data-animate=' fadeinup""='')
+                img(src='images/mouse-scroll.png' alt='')
+                span Tekerlek Aşağı 
+        .section.animated-row(data-section='slide02')
+          .section-inner
+            .about-section
+              .row.justify-content-center
+                .col-lg-8.wide-col-laptop
+                  .row
+                    .col-md-6
+                      .about-contentbox
+                        .animate(data-animate='fadeInUp')
+                          span Hakkımda
+                          h2 Ben Kimim?
+                          p
+                            | Ben 
+                            strong Ankara
+                            |  doğumlu 22 yaşında 
+                            strong
+                              | Bilgisayar
+                              | Programcılığı
+                            |  bölümünden yeni mezun olmuş biriyim.
+                        .facts-list.owl-carousel
+                          .item.animate(data-animate='fadeInUp')
+                            .counter-box
+                              i.fa.fa-trophy.counter-icon(aria-hidden='true')
+                              span.count-number 2
+                              |Başarılı Proje
+                          .item.animate(data-animate='fadeInUp')
+                            .counter-box
+                              i.fa.fa-graduation-cap.counter-icon(aria-hidden='true')
+                              span.count-number 2
+                              |Sene üniversite
+                          .item.animate(data-animate='fadeInUp')
+                            .counter-box
+                              i.fa.fa-desktop.counter-icon(aria-hidden='true')
+                              span.count-number 1
+                              |Bölüm tecrübesi
+                    .col-md-6
+                      figure.about-img.animate(data-animate='fadeInUp')
+                        img.rounded(src='images/profil.jpeg' alt='')
+        .section.animated-row(data-section='slide03')
+          .section-inner
+            .row.justify-content-center
+              .col-md-7.wide-col-laptop
+                .title-block.animate(data-animate='fadeInUp')
+                  h2 Yeteneklerim
+                .skills-row.animate(data-animate='fadeInDown')
+                  .row
+                    .col-md-8.offset-md-2
+                      .skill-item
+                        h6 HTML
+                        .skill-bar
+                          span 90%
+                          .filled-bar-2
+                      .skill-item
+                        h6 CSS
+                        .skill-bar
+                          span 90%
+                          .filled-bar-2
+                      .skill-item
+                        h6 Javascript
+                        .skill-bar
+                          span 60%
+                          .filled-bar-3
+                      .skill-item.last-skill
+                        h6 C#
+                        .skill-bar
+                          span 50%
+                          .filled-bar
+        .section.animated-row(data-section='slide04')
+          .section-inner
+            .row.justify-content-center
+              .col-md-8.wide-col-laptop
+                .title-block.animate(data-animate='fadeInUp')
+                  h2 Ben neler yapabilirim?
+                .services-section
+                  .services-list.owl-carousel
+                    .item.animate(data-animate='fadeInUp')
+                      .service-box
+                        span.service-icon
+                          i.fa-brands.fa-css3-alt(aria-hidden='true')
+                        h3 CSS Kodlaması
+                        p CSS ile göze hitap eden uygun dizaynlar yapabilirim.
+                    .item.animate(data-animate='fadeInUp')
+                      .service-box
+                        span.service-icon
+                          i.fa-solid.fa-mobile-screen-button(aria-hidden='true')
+                        h3 Mobil uyumlu tasarımlar
+                        p Her türlü çözünürlüğe uygun ve kullanışlı tasarımlar yapabilirim
+                    .item.animate(data-animate='fadeInUp')
+                      .service-box
+                        span.service-icon
+                          i.fa-brands.fa-html5(aria-hidden='true')
+                        h3 HTML5 Kodlaması
+                        p Profesyonel düzeyde html kodlaması yapabilirim
+        .section.animated-row(data-section='slide05')
+          .section-inner
+            .row.justify-content-center
+              .col-md-8.wide-col-laptop
+                .title-block.animate(data-animate='fadeInUp')
+                  span Çalışmalarım
+                  h2 Ben neler yaptım ?
+                .gallery-section
+                  .gallery-list.owl-carousel
+                    .item.animate(data-animate='fadeInUp')
+                      .portfolio-item
+                        .thumb
+                          img(src='images/site.png' alt='')
+                        .thumb-inner.animate(data-animate='fadeInUp')
+                          a(href='#slide01')
+                            h4 Kendi Web Sitem
+                            p Kendi bilgilerimin bulunduğu bir web sitesi tasarladım.
+                    .item.animate(data-animate='fadeInUp')
+                      .portfolio-item
+                        .thumb
+                          img(src='images/item-2.png' alt='')
+                        .thumb-inner.animate(data-animate='fadeInUp')
+                          a(href='https://geotekteknoloji.com/')
+                            h4 Geotek teknoloji
+                            p
+                              | Bu sitenin frontend ve backend kısmını ben tasarlayıp oluşturdum.
+                              | Şu an halihazırda kullanılmakta
+        .section.animated-row(data-section='slide06 ')
+          .section-inner
+            .row.justify-content-center
+              .col-md-7.wide-col-laptop
+                .title-block.animate(data-animate='fadeInUp')
+                  span İletişim
+                  h2 Bana Ulaşın
+                .contact-section
+                  .row
+                    .col-md-6.animate(data-animate='fadeInUp')
+                      .contact-box
+                        .contact-row
+                          i.fa.fa-envelope
+                          |  joseff1544@gmail.com
+                    .col-md-6.animate(data-animate='fadeInUp')
+                      form#ajax-contact(method='post' action='')
+                        .input-field
+                          input#name.form-control(type='text' name='name' required='' placeholder='İsim')
+                        .input-field
+                          input#phone.form-control(type='text' name='phone' required='' placeholder='Telefon')
+                        .input-field
+                          input#email.form-control(type='email' name='email' required='' placeholder='E-posta')
+                        .input-field
+                          textarea#message.form-control(name='message' required='' placeholder='Mesaj')
+                        button.btn(type='submit') Gönder
+                      #form-messages.mt-3
+      #social-icons
+        .text-right
+          ul.social-icons
+            li
+              a(href='https://www.instagram.com/ysfcpaa/' title='İnstagram')
+                i.fa-brands.fa-instagram
+            li
+              a(href='https://www.linkedin.com/in/yusuf-çapa-b459bb282/' title='Linkedin')
+                i.fa-brands.fa-linkedin
+    script(src='javascripts/jquery.js')
+    script(src='javascripts/bootstrap.min.js')
+    script(src='javascripts/fullpage.min.js')
+    script(src='javascripts/scrolloverflow.js')
+    script(src='javascripts/owl.carousel.min.js')
+    script(src='javascripts/jquery.inview.min.js')
+    script(src='javascripts/form.js')
+    script(src='javascripts/custom.js')
